@@ -1,7 +1,7 @@
 {
   "name": "tiny-bench",
-  "version": "0.0.1",
-  "description": "Minimum interface benchmarking tool.",
+  "version": "0.0.3",
+  "description": "Minimum benchmark tool.",
   "main": "./lib/index.js",
   "scripts": {
     "dev": "npm run build && npm run watch",
@@ -14,6 +14,7 @@
   "license": "ISC",
   "dependencies": {
     "benchmark": "^2.1.1",
+    "microtime": "^2.1.1",
     "object-keys": "^1.0.11"
   },
   "devDependencies": {

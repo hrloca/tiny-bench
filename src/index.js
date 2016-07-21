@@ -23,8 +23,8 @@ suite
 export const test = {}
 
 export const run = v => {
-  keys(obj).forEach(v => {
-    suite.add(v, obj[v])
+  keys(test).forEach(v => {
+    suite.add(v, test[v])
   })
   suite.run({ 'async': true })
 }

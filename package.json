@@ -1,0 +1,27 @@
+{
+  "name": "tiny-bench",
+  "version": "0.0.1",
+  "description": "Minimum interface benchmarking tool.",
+  "main": "./lib/index.js",
+  "scripts": {
+    "dev": "npm run build && npm run watch",
+    "build": "babel src -d lib",
+    "watch": "chokidar './src/**/*.js' -c 'npm run build'",
+    "test": "mocha"
+  },
+  "keywords": [],
+  "author": "hrloca <hr.loca@gmail.com>",
+  "license": "ISC",
+  "dependencies": {
+    "benchmark": "^2.1.1",
+    "object-keys": "^1.0.11"
+  },
+  "devDependencies": {
+    "babel": "^6.5.2",
+    "babel-cli": "^6.9.0",
+    "babel-core": "^6.9.1",
+    "babel-preset-es2015": "^6.9.0",
+    "chokidar-cli": "^1.2.0",
+    "mocha": "^2.5.3"
+  }
+}

@@ -2,8 +2,13 @@
 Minimum benchmark tool.
 
 ## usage
+
+```sh
+npm i -D tiny-bench
+```
+
 ```js
-import {test, run} from 'tiny-bench'
+const {test, run} = require('tiny-bench')
 
 test['test1'] = () => {
   // ...

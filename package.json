@@ -1,8 +1,12 @@
 {
   "name": "tiny-bench",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "description": "Minimum benchmark tool.",
   "main": "./lib/index.js",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/hrloca/tiny-bench.git"
+  },
   "scripts": {
     "dev": "npm run build && npm run watch",
     "build": "babel src -d lib",

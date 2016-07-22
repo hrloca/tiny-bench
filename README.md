@@ -1,22 +1,33 @@
 # tiny-bench
 Minimum benchmark tool.
 
-## usage
+## installation
 
 ```sh
 npm i -D tiny-bench
 ```
 
+## usage
+
 ```js
-const {test, run} = require('tiny-bench')
+const tb = require('tiny-bench')
 
-test['test1'] = () => {
-  // ...
+tb.test['join'] = () => {
+  ['a', 'b', 'c'].join('')
 }
 
-test['test2'] = () => {
-  // ...
+tb.test['reduce'] = () => {
+  ['a', 'b', 'c'].reduce((a, c) => a + c)
 }
 
-run()
+tb.run()
+```
+
+```
+--------------------------------------------------
+join x 2,333,476 ops/sec ±1.75% (83 runs sampled)
+reduce x 10,681,067 ops/sec ±1.20% (84 runs sampled)
+--------------------------------------------------
+👑 reduce
+🃏 join
 ```
